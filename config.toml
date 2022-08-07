@@ -1,10 +1,8 @@
-baseURL = 'https://kejepanganhugotheme.vercel.app'
+baseURL = 'https://kejepangan-hugo-theme.netlify.app'
 languageCode = 'id'
 title = 'Bahasa Jepang Asik'
 theme = 'kejepangan'
 summaryLength = '15'
-[build]
-  writeStats = true
 [params]
   logo = '/images/bahasa_jepang_asik_logo_30.png'
   icon = '/images/bahasa_jepang_asik_icon.png'
