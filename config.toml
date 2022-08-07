@@ -3,11 +3,13 @@ languageCode = 'id'
 title = 'Bahasa Jepang Asik'
 theme = 'kejepangan'
 summaryLength = '15'
+[build]
+  writeStats = true
 [params]
-logo = '/images/bahasa_jepang_asik_logo_30.png'
-icon = '/images/bahasa_jepang_asik_icon.png'
-Title_tag = 'Belajar Bahasa Jepang GRATIS'
-Description = 'Situs Belajar Bahasa Jepang Online, Gratis dan Lengkap'
+  logo = '/images/bahasa_jepang_asik_logo_30.png'
+  icon = '/images/bahasa_jepang_asik_icon.png'
+  Title_tag = 'Belajar Bahasa Jepang GRATIS'
+  Description = 'Situs Belajar Bahasa Jepang Online, Gratis dan Lengkap'
 [menu]
 [[menu.main]]
   identifier = 'Home'
