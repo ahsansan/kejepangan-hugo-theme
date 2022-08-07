@@ -1,0 +1,50 @@
+{{ define "header"}}
+  {{- partial "header.html" . -}}
+{{ end }}
+
+{{ define "main"}}
+  {{- partial "breadcrumb.html" . -}}
+
+  <div
+    id="main-content"
+    class="py-5 flex flex-col md:flex-row md:justify-between rounded-md bg-slate-200"
+  >
+    <section class="my-3 mx-3 p-4 bg-slate-50 shadow-md flex-[70%] md:ml-5">
+      <p class="text-lg font-bold">Halaman {{ .Title }}</p>
+      <!-- Deskripsi Kategori -->
+      <div class="my-3 text-sm">{{ .Content }}</div>
+      <!-- List -->
+      <div class="flex flex-col sm:flex-row">
+        {{ range .Pages }}
+        <div class="p-1 flex-[30%]">
+          {{if isset .Params "featured_image"}}
+          <a href="{{ .Permalink }}">
+            <img
+              src="{{ .Params.featured_image }}"
+              alt="{{ .Title }}"
+              class="rounded border border-slate-500 hover:opacity-80"
+            />
+          </a>
+          {{end}}
+        </div>
+        <div class="ml-2 p-1 flex-[70%]">
+          <a class="text-red-500 hover:text-red-700" href="{{ .Permalink }}"
+            ><h1 class="font-bold text-2xl md:text-3xl">{{ .Title }}</h1></a
+          >
+          <p class="text-slate-500 p-1 my-2 rounded text-xs italic">
+            {{.Date.Format "01-January-2006"}}
+          </p>
+          <p class="text-sm md:text-sm">{{ .Summary }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </section>
+    <aside class="flex-[30%] md:mr-5">
+      {{- partial "aside.html" . -}}
+    </aside>
+  </div>
+{{ end }}
+
+{{ define "footer"}}
+  {{- partial "footer.html" . -}}
+{{ end }}

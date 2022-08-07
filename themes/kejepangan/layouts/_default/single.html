@@ -1,0 +1,56 @@
+{{ define "header"}}
+    {{- partial "header.html" . -}}
+{{ end }}
+
+{{ define "main" }}
+    {{- partial "breadcrumb.html" . -}}
+    <div id="main-content" class="py-5 flex flex-col md:flex-row md:justify-between rounded-md bg-slate-200">
+        <article class="my-3 mx-3 p-4 bg-slate-50 shadow-md flex-[70%] md:ml-5">
+          <!-- Title -->
+          <div class="my-3">
+            <h1 class="text-xl font-bold md:text-2xl">{{ .Title }}</h1>
+          </div>
+          <!-- Author Box -->    
+          <hr/>
+          <div class="my-2">
+            <span class="italic text-sm">
+                {{ dateFormat "2 January 2006" .PublishDate }} oleh <b>{{ .Site.Params.author.name }}</b>
+            </span> 
+          </div>
+          <hr/>
+          <!-- Post Featured Image -->
+          <div class="mt-3">
+            {{if isset .Params "featured_image"}}
+                <figure>
+                <img class="featured-image img-fluid rounded" src="{{ .Params.featured_image }}" alt="{{.Title}}">
+                <figcaption class="text-sm italic text-slate-500">{{.Title}}</figcaption></figure>
+                    <br/>
+            {{end}}
+          </div>
+          <!-- Post Content -->
+          <div>
+           {{ .Content}}
+          </div>
+          <!-- Post Categories -->
+          <div class="my-5">
+            {{if .Params.tags }}
+            <b>Tags:</b>
+          <ul class="flex flex-row flex-wrap mt-2">
+            {{ range .Params.tags }}
+              <li>
+               <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="bg-slate-500 text-slate-50 p-1 m-1 rounded hover:bg-slate-600 hover:text-slate-100 text-sm">#{{.}}</a>
+              </li>
+            {{ end }}
+        </ul>
+            {{ end }}
+          </div>
+        </article>
+        <aside class="flex-[30%] md:mr-5">
+            {{- partial "aside.html" . -}}
+        </aside>
+      </div>
+{{ end }}
+
+{{ define "footer"}}
+    {{- partial "footer.html" . -}}
+{{ end }}

@@ -1,0 +1,30 @@
+baseURL = 'https://kejepanganhugotheme.vercel.app'
+languageCode = 'id'
+title = 'Bahasa Jepang Asik'
+theme = 'kejepangan'
+summaryLength = '15'
+[params]
+logo = '/images/bahasa_jepang_asik_logo_30.png'
+icon = '/images/bahasa_jepang_asik_icon.png'
+Title_tag = 'Belajar Bahasa Jepang GRATIS'
+Description = 'Situs Belajar Bahasa Jepang Online, Gratis dan Lengkap'
+[menu]
+[[menu.main]]
+  identifier = 'Home'
+  name = 'Home'
+  url = '/'
+  weight = '1'
+[[menu.main]]
+  identifier = 'About'
+  name = 'About Us'
+  url = '/about/'
+  weight = '2'
+[[menu.main]]
+  identifier = 'Tips'
+  name = 'Tips'
+  url = '/tips/'
+  weight = '3'
+[params.author]
+  name = 'Maulana Ahsan'
+  image = '/images/maulana_ahsan.jpeg'
+  description = 'Seorang konten kreator bahasa Jepang dan Jejepangan. @kejepangan'

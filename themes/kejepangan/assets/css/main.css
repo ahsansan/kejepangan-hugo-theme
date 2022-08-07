@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl font-bold;
+  }
+  h2 {
+    @apply text-xl font-bold;
+  }
+  h3 {
+    @apply text-lg font-bold;
+  }
+  a {
+    @apply text-red-500;
+  }
+  a:hover {
+    @apply text-red-700;
+  }
+  #main-content {
+    @apply leading-relaxed;
+  }
+}
+
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  background-color: rgb(100 116 139);
+  padding: 7px;
+}
+
+.breadcrumb li {
+  display: inline;
+  white-space: nowrap;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.breadcrumb li + li:before {
+  content: ">";
+  padding: 4px;
+  font-weight: bold;
+}
