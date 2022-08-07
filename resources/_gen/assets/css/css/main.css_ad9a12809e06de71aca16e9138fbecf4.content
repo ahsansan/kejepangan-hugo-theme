@@ -584,6 +584,9 @@ video {
 .flex-\[30\%\] {
   flex: 30%;
 }
+.flex-1 {
+  flex: 1 1 0%;
+}
 .flex-row {
   flex-direction: row;
 }

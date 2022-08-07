@@ -1,5 +1,5 @@
 ---
-title: "Tips Kedua"
+title: "Nama Hari dalam Bahasa Jepang"
 date: 2022-08-08T06:23:25+07:00
 draft: false
 url: '/nama-hari/'
