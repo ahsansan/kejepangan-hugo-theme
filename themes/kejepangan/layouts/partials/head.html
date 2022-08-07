@@ -1,34 +1,8 @@
-<head>
-  <meta charset="utf-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-  />
-  {{ hugo.Generator }} {{ with .Site.Params.icon }}
-  <link rel="icon" href="{{ . | urlize | relURL }}" />
-  {{ end }}
-  <!-- Title -->
-  {{if .Params.title_tag }}
-  <title>{{ .Params.title_tag }}</title>
-  {{else}}
-  <title>{{ .Site.Params.Title_tag }}</title>
-  {{end}}
-  <!-- Deskripsi -->
-  {{if .Description}}
-  <meta name="description" content="{{.Description}}" />
-  {{ else }}
-  <meta name="description" content="{{.Site.Params.Description}}" />
-  {{ end }}
-  <!-- Style -->
-  {{ $styles := resources.Get "css/main.css" | postCSS }} {{ if .Site.IsServer }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-  {{ else }}
-  
-  {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
-  <link
-    rel="stylesheet"
-    href="{{ $styles.RelPermalink }}"
-    integrity="{{ $styles.Data.Integrity }}"
-  />
-  {{ end }}
-</head>
+{{ $styles := resources.Get "css/main.css" | postCSS }}
+
+{{ if .Site.IsServer }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+{{ else }}
+{{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" />
+{{ end }}
