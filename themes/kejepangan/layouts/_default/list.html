@@ -15,7 +15,7 @@
       <div class="my-3 text-sm">{{ .Content }}</div>
       <!-- List -->
       {{ range .Pages }}
-      <div class="flex flex-col sm:flex-row">
+      <div class="my-3 flex flex-col sm:flex-row">
         <div class="p-1 flex-[30%]">
           {{if isset .Params "featured_image"}}
           <a href="{{ .Permalink }}">
@@ -37,6 +37,7 @@
           <p class="text-sm md:text-sm">{{ .Summary }}</p>
         </div>
       </div>
+      <hr/>
       {{ end }}
     </section>
     <aside class="flex-[30%] md:mr-5">
