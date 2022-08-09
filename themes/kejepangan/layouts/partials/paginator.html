@@ -1,0 +1,6 @@
+{{ if .Paginator.HasPrev }}
+    <a class="text-xl m-4 px-5 py-2 bg-slate-500 text-white hover:text-white hover:bg-slate-600 rounded-md" href="{{ .Paginator.Prev.URL }}">  Prev </a>
+{{ end }}
+{{ if .Paginator.HasNext }}
+    <a class="text-xl m-4 px-5 py-2 bg-slate-500 text-white hover:text-white hover:bg-slate-600 rounded-md" href="{{ .Paginator.Next.URL }}">  Next </a>
+{{ end }}

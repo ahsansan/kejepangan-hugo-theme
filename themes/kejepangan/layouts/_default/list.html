@@ -14,7 +14,7 @@
       <!-- Deskripsi Kategori -->
       <div class="my-3 text-sm">{{ .Content }}</div>
       <!-- List -->
-      {{ range .Pages }}
+      {{ range .Paginator.Pages }}
       <div class="my-3 flex flex-col sm:flex-row">
         <div class="p-1 flex-[30%]">
           {{if isset .Params "featured_image"}}
@@ -35,10 +35,16 @@
             {{.Date.Format "01-January-2006"}}
           </p>
           <p class="text-sm md:text-sm">{{ .Summary }}</p>
+          <div class="text-right mt-5">
+            <a class="p-2 text-xs bg-slate-500 text-white hover:bg-slate-600 hover:text-white rounded-md" href="{{ .Permalink }}">Baca selengkapnya...</a>
+          </div>
         </div>
       </div>
       <hr/>
       {{ end }}
+      <div class="mt-5 text-right">
+        {{- partial "paginator.html" . -}}
+      </div>
     </section>
     <aside class="flex-[30%] md:mr-5">
       {{- partial "aside.html" . -}}
