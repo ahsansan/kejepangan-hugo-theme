@@ -21,6 +21,12 @@
   #main-content {
     @apply leading-relaxed;
   }
+  #main-content li {
+    @apply list-disc list-inside;
+  }
+  #main-content blockquote {
+    @apply bg-slate-200 p-3 rounded-md m-2 text-sm;
+  }
 }
 
 .breadcrumb {

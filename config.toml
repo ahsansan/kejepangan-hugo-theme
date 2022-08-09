@@ -8,6 +8,19 @@ summaryLength = '15'
   icon = '/images/bahasa_jepang_asik_icon.png'
   Title_tag = 'Belajar Bahasa Jepang GRATIS'
   Description = 'Situs Belajar Bahasa Jepang Online, Gratis dan Lengkap'
+[related]
+  includeNewer = true
+  threshold = 85
+  toLower = false
+  [[related.indices]]
+    name = "tags"
+    weight = 80
+  [[related.indices]]
+    name = "keywords"
+    weight = 40
+  [[related.indices]]
+    name = "date"
+    weight = 10
 [menu]
 [[menu.main]]
   identifier = 'Home'
