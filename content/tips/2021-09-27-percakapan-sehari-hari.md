@@ -24,4 +24,40 @@ Selain itu coba tulis juga contoh yang kamu buat sendiri di buku atau di kolom k
 
 Langsung saja, tanpa banyak basa basi mari kita sajikan satu per satu beberapa percakapan nya.
 
+{{< rawhtml >}}
+<div class="materi-green">
+<p>Welcome to <strong>MakeWithHugo</strong></p>
+</div>
+{{< /rawhtml >}}
+
+{{< rawhtml >}}
+<div class="materi-yellow">
+<p>Welcome to <strong>MakeWithHugo</strong></p>
+</div>
+{{< /rawhtml >}}
+
+{{< rawhtml >}}
+<div class="materi-blue">
+<p>Welcome to <strong>MakeWithHugo</strong></p>
+</div>
+{{< /rawhtml >}}
+
+{{< rawhtml >}}
+<div class="materi-orange">
+<p>Welcome to <strong>MakeWithHugo</strong></p>
+</div>
+{{< /rawhtml >}}
+
+{{< rawhtml >}}
+<div class="materi-red">
+<p>Welcome to <strong>MakeWithHugo</strong></p>
+</div>
+{{< /rawhtml >}}
+
+{{< rawhtml >}}
+<div class="materi-pink">
+<p>Welcome to <strong>MakeWithHugo</strong></p>
+</div>
+{{< /rawhtml >}}
+
 [1]: https://bahasajepangasik.com/percakapan-sehari-hari/
