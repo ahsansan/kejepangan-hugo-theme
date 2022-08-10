@@ -6,6 +6,8 @@ url: ''
 featured_image: ''
 tags:
   - Kejepangan
+keyword:
+  - Kejepangan
 title_tag: ''
 description: ''
 ---

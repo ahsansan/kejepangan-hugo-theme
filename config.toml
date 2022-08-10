@@ -24,6 +24,10 @@ disqusShortname = 'kejepangan'
   [[related.indices]]
     name = "date"
     weight = 10
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
 [menu]
 [[menu.main]]
   identifier = 'Home'

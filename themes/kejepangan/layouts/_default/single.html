@@ -49,9 +49,11 @@
             {{- partial "related.html" . -}}
           </div>
           <!-- Komen -->
+          {{ if .Params.tags }}
           <div class="mt-7">
             {{ template "_internal/disqus.html" . }}
           </div>
+          {{ end }}
         </article>
         <aside class="flex-[30%] md:mr-5">
             {{- partial "aside.html" . -}}

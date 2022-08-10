@@ -20,6 +20,18 @@
   {{ else }}
   <meta name="description" content="{{.Site.Params.Description}}" />
   {{ end }}
+  <!-- Keywords -->
+  {{if .Keywords}}
+  <meta name="keywords" content="{{ delimit .Keywords ", " }}" />
+  {{ else }}
+  <meta name="keywords" content="{{.Site.Params.Description}}" />
+  {{ end }}
+  <!-- Robot (Masih ragu) -->
+  <!-- {{ if eq (getenv "HUGO_ENV") "production" }}
+  <meta name="robots" content="index,follow">
+  {{ else }}
+  <meta name="robots" content="noindex,nofollow">
+  {{ end }} -->
   <!-- Style -->
   {{ $styles := resources.Get "css/main.css" | postCSS }} {{ if .Site.IsServer }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
