@@ -367,6 +367,9 @@ video {
   max-width: 100%;
   height: auto;
 }
+  html {
+  scroll-behavior: smooth;
+}
   h1 {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -781,6 +784,8 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+/* Breadcrumb */
+
 .breadcrumb {
   list-style: none;
   display: flex;
@@ -802,6 +807,8 @@ video {
   padding: 4px;
   font-weight: bold;
 }
+
+/* Materi */
 
 .materi-green {
   background-color: rgb(187 247 208);

@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
   h1 {
     @apply text-2xl font-bold;
   }
@@ -29,6 +32,8 @@
   }
 }
 
+/* Breadcrumb */
+
 .breadcrumb {
   list-style: none;
   display: flex;
@@ -50,6 +55,8 @@
   padding: 4px;
   font-weight: bold;
 }
+
+/* Materi */
 
 .materi-green {
   background-color: rgb(187 247 208);

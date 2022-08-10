@@ -22,7 +22,11 @@ Semoga saja bisa bermanfaat untuk kamu yang sedang membaca ini, dan memiliki mas
 
 Selain itu coba tulis juga contoh yang kamu buat sendiri di buku atau di kolom komentar dibawah, agar kamu juga makin lancar dalam penggunaan bahasa Jepang untuk kebutuhan sehari hari.
 
+{{< toc >}}
+
 Langsung saja, tanpa banyak basa basi mari kita sajikan satu per satu beberapa percakapan nya.
+
+## Pembahasan 1
 
 {{< rawhtml >}}
 <div class="materi-green">
@@ -30,11 +34,15 @@ Langsung saja, tanpa banyak basa basi mari kita sajikan satu per satu beberapa p
 </div>
 {{< /rawhtml >}}
 
+## Pembahasan 2
+
 {{< rawhtml >}}
 <div class="materi-yellow">
 <p>Welcome to <strong>MakeWithHugo</strong></p>
 </div>
 {{< /rawhtml >}}
+
+## Pembahasan 3
 
 {{< rawhtml >}}
 <div class="materi-blue">
@@ -42,17 +50,23 @@ Langsung saja, tanpa banyak basa basi mari kita sajikan satu per satu beberapa p
 </div>
 {{< /rawhtml >}}
 
+## Pembahasan 4
+
 {{< rawhtml >}}
 <div class="materi-orange">
 <p>Welcome to <strong>MakeWithHugo</strong></p>
 </div>
 {{< /rawhtml >}}
 
+## Pembahasan 5
+
 {{< rawhtml >}}
 <div class="materi-red">
 <p>Welcome to <strong>MakeWithHugo</strong></p>
 </div>
 {{< /rawhtml >}}
+
+## Pembahasan 6
 
 {{< rawhtml >}}
 <div class="materi-pink">
