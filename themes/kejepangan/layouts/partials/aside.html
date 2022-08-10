@@ -5,7 +5,7 @@
   <div class="flex-1 my-3 mx-3 p-4 bg-slate-50 shadow-md rounded-lg">
     <p class="text-lg font-bold">Tips Terbaru</p>
     <div>
-      {{- range ( where site.RegularPages "Section" "tips" | first 3 ) }}
+      {{- range ( where site.RegularPages "Section" "tips" | first 5 ) }}
         <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
       {{- end}}
     </div>

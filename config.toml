@@ -4,6 +4,8 @@ title = 'Bahasa Jepang Asik'
 theme = 'kejepangan'
 summaryLength = '15'
 paginate = '5'
+googleAnalytics = ''
+disqusShortname = 'kejepangan'
 [params]
   logo = '/images/bahasa_jepang_asik_logo_30.png'
   icon = '/images/bahasa_jepang_asik_icon.png'
