@@ -27,12 +27,12 @@
   <meta name="keywords" content="{{.Site.Params.Keywords}}" />
   {{ end }}
   <!-- Robot (Masih ragu) -->
-  {{ if eq (getenv "HUGO_ENV") "production" }}
+  <!-- {{ if eq (getenv "HUGO_ENV") "production" }}
   <meta name="robots" content="index,follow">
   {{ else }}
   <meta name="robots" content="noindex,nofollow">
   {{ end }}
-  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+  <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' /> -->
   <!-- Style -->
   {{ $styles := resources.Get "css/main.css" | postCSS }} {{ if .Site.IsServer }}
   <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
@@ -58,7 +58,7 @@
       if(location.hash === "#!/history") {
         history.replaceState(null, document.title, location.pathname);
         setTimeout(function(){
-          location.replace("http://www.url.com");
+          location.replace("http://rpl-yes.blogspot.com");
         },10);
       }
     }, false);
